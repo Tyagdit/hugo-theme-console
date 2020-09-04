@@ -9,6 +9,7 @@ A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-conso
 - Can add an optional "command" at the end of the prompt (using front matter) and customize the beginning
 - Changed the 404 page
 - Removed the zoom in animation
+- Removed footer from homepage
 
 ## Installation
 

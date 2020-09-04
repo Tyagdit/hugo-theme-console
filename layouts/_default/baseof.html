@@ -35,7 +35,7 @@
             <div class="logo terminal-prompt">
               {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
               {{ $.Scratch.Add "path" .Site.BaseURL }}
-			  {{ .Site.Params.host }}<a href="{{ .Site.BaseURL }}" class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}">home</a>/{{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if and (ne $element "") (ne $element "404.html") }}<a href='{{ $.Scratch.Get "path" | absURL }}'>{{ . }}</a>/{{ $.Scratch.Add "path" "/" }}{{ end }}{{ end }}$ {{ .Params.cmd | default (printf "cd %s" ($url | default "home")) }}</div></header>
+              {{ .Site.Params.host }}<a href="{{ .Site.BaseURL }}" class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}">home</a>/{{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if and (ne $element "") (ne $element "404.html") }}<a href='{{ $.Scratch.Get "path" | absURL }}'>{{ . }}</a>/{{ $.Scratch.Add "path" "/" }}{{ end }}{{ end }}$ {{ .Params.cmd | default (printf "cd %s" ($url | default "home")) }}</div></header>
 
           <nav class="terminal-menu">
             <ul vocab="https://schema.org/" typeof="BreadcrumbList">
@@ -50,7 +50,9 @@
     <div class="container">
         {{ block "main" . }}
         {{ end }}
-        {{ partial "footer.html" . }}
+        {{ if ne $url "" }}
+            {{ partial "footer.html" . }}
+        {{ end }}
     </div>
   </body>
 </html>
