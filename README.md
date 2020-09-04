@@ -1,43 +1,36 @@
 # Hugo Theme: Console
 
-A minimal, responsive and light theme for Hugo inspired by Linux console. 
+A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-console) for [Hugo](https://gohugo.io/) I customized for [my website](https://tyagdit.github.io)
 
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
+## Changes
 
-## Live demo
-
-https://mrmierzejewski.com
+- Dark theme
+- The terminal prompt header looks better 
+- Can add an optional "command" at the end of the prompt and customize the beginning
+- Changed the 404 page
+- Removed the zoom in animation
 
 ## Installation
 
 ```sh
 $ mkdir themes
 $ cd themes
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/tyagdit/hugo-theme-console.git hugo-theme-console
 ```
     
 See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
 ## Configuration
 
-Set theme parameter in your config file:
-
-```
-theme = "hugo-theme-console"
-```
+Copy the `config.toml` file from the `exampleSite` directory to the root of your website folder and customize it as you like.
 
 ## Example Site
 
-To run the example site, please type the following command:
-
-```
-makefile hugo-server
-```
+To test the theme with the example site, navigate to the theme directory (not `exampleSite`) and type `makefile hugo-server`
 
 ### Start page
 
-The default start page template is located at ```themes/hugo-theme-console/layouts/index.html```. To change the page contect, you to need to copy this file to 
-your website top-level ```layouts``` folder (```layouts/index.html```).
+The default start page template is located at `themes/hugo-theme-console/layouts/index.html`. To change the page content, you to need to copy this file to the `layouts` directory in your website's root directory (`layouts/index.html`) and customize it as you like.
 
 ## License
 
