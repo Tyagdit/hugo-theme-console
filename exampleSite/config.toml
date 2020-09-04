@@ -6,6 +6,8 @@ languageCode = "en-us"
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = true
+  # This is what appears in the prompt header before the path
+  host = "tyagdit@web:/"
 
   [[params.navlinks]]
   name = "about/"
