@@ -32,19 +32,21 @@
 
 :root {
     --global-font-size: 16px;
-    --global-font-color: #444;
+    --global-font-color: #eeeeee;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
-    --code-bg-color: #fff;
+    --code-bg-color: #20211d;
+    --primary-color: #74c5f4;
+    --font-color: #f0f0ec;
+    --secondary-font-color: #a3a4a5;
 }
 
 @media only screen and (max-width: 850px) {
     :root {
         --global-font-size: 14px;
-        --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
@@ -73,7 +75,7 @@
 body {
     font-family: var(--font-stack);
     font-size: var(--global-font-size);
-    background-color: #fff;
+    background-color: #222222;
     margin-bottom: 75px;
 }
 
@@ -165,7 +167,7 @@ figure {
     margin-top: 100px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
-    color: var(--global-font-color);
+    color: var(--secondary-font-color);
 }
 
 .image-grid {
@@ -213,6 +215,7 @@ figure {
     z-index: 400;
     font-weight: bold;
     padding-top: 3px;
+    color: var(--secondary-font-color);
 }
 
 @media only screen and (max-width: 850px) {
