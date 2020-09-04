@@ -6,7 +6,7 @@ A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-conso
 
 - Dark theme
 - The terminal prompt header looks better 
-- Can add an optional "command" at the end of the prompt and customize the beginning
+- Can add an optional "command" at the end of the prompt (using front matter) and customize the beginning
 - Changed the 404 page
 - Removed the zoom in animation
 

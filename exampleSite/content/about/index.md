@@ -1,6 +1,7 @@
 +++
 date = "2016-11-05T21:05:33+05:30"
 title = "About"
+cmd = "man tyagdit"
 +++
 
 A minimal, responsive and light theme for Hugo inspired by Linux console. 

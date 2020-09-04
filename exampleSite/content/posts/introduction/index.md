@@ -1,6 +1,7 @@
 +++
-title = "What is Hugo"
+title = "Introduction"
 date = "2019-07-01"
+cmd = "cat introduction.md"
 +++
 
 Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
