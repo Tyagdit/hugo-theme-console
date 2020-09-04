@@ -12,10 +12,10 @@ A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-conso
 
 ## Installation
 
+In your website's root directory:
+
 ```sh
-$ mkdir themes
-$ cd themes
-$ git submodule add https://github.com/tyagdit/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/tyagdit/hugo-theme-console.git themes/hugo-theme-console
 ```
     
 See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
