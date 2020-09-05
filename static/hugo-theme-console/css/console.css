@@ -190,6 +190,17 @@ figure {
     content: none;
 }
 
+.no-prompt::after {
+    -webkit-animation: cursor 0s infinite;
+    animation: cursor 0s infinite;
+	background: #222222;
+    width: 10px;
+}
+
+.no-prompt::before {
+    content: none;
+}
+
 .gallery-image {
     margin-top: 10px;
     margin-bottom: 10px;

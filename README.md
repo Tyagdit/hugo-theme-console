@@ -11,6 +11,8 @@ A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-conso
 - Removed the zoom in animation
 - Removed footer from homepage
 - Removed date from post list and replaced with "file permissions"
+- Added a shortcode to show a blinking cursor: `{{< cursor >}}`
+- Added an option to remove blinking cursor from header prompt
 
 ## Installation
 
