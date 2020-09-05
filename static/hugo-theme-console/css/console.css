@@ -225,7 +225,6 @@ figure {
     height: 100%;
     z-index: 400;
     font-weight: bold;
-    padding-top: 3px;
     color: var(--secondary-font-color);
 }
 
