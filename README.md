@@ -10,6 +10,7 @@ A fork of the [console theme](https://github.com/mrmierzejewski/hugo-theme-conso
 - Changed the 404 page
 - Removed the zoom in animation
 - Removed footer from homepage
+- Removed date from post list and replaced with "file permissions"
 
 ## Installation
 
