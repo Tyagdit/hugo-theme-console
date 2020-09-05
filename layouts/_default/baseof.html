@@ -50,7 +50,7 @@
     <div class="container">
         {{ block "main" . }}
         {{ end }}
-        {{ if ne $url "" }}
+        {{ if and (ne $url "") (ne $url "/") }}
             {{ partial "footer.html" . }}
         {{ end }}
     </div>
