@@ -216,7 +216,7 @@ figure {
 
 .posts-list {
     position: relative;
-    padding-left: 150px;
+    padding-left: 270px;
     top: 0;
     margin-top: 21px;
 }
@@ -229,11 +229,15 @@ figure {
     display: inline-block;
     position: absolute;
     left: 0px;
-    width: 150px;
+    width: 270px;
     height: 100%;
     z-index: 400;
     font-weight: bold;
     color: var(--secondary-font-color);
+}
+
+.posts-list .date:before {
+    content: "-rw-r--r-- ";
 }
 
 @media only screen and (max-width: 850px) {

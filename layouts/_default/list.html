@@ -7,8 +7,7 @@
 {{ range sort .Data.Pages "Date" "desc" }}
     {{ if not .Params.private }}
         <div class="post">
-            <!--div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div-->
-            <div class="date">-rw-r--r--</div>
+            <div class="date">{{ .ReadingTime }}Min {{ .PublishDate.Format "Jan-2-2006" }}</div>
             <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
             <!--{{ .Summary }}-->
         </div>
