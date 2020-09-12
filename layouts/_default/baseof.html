@@ -35,6 +35,7 @@
             <div class="logo {{ if eq .Params.cursor false }}no-prompt {{ end }}terminal-prompt">
                 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
                 {{ $.Scratch.Add "path" .Site.BaseURL }}
+                {{ $.Scratch.Add "path" "/" }}
                 {{- .Site.Params.host -}}
                 <a href="{{ .Site.BaseURL }}" class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}">home</a>/
                 {{- range $index, $element := split $url "/" -}}
@@ -43,8 +44,9 @@
                         <a href='{{ $.Scratch.Get "path" | absURL }}'>{{ . }}</a>/
                         {{- $.Scratch.Add "path" "/" -}}
                     {{- end -}}
-                {{- end -}}$
-                {{ .Params.cmd | default (printf "cd %s" ($url | default "home")) }}
+                {{- end -}}
+                $&nbsp;
+                {{- .Params.cmd | default (printf "cd %s" ($url | default "home")) -}}
             </div>
           </header>
 
